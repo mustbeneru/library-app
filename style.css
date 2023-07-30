@@ -1,0 +1,166 @@
+@font-face {
+    font-family: poppins;
+    src: url(./fonts/Poppins-Regular.ttf);
+}
+
+* {
+    font-family: poppins;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #e2e8f0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+}
+
+.main {
+    display: flex;
+    margin: 4rem;
+    gap: 4rem;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.header {
+    background-color: #94a3b8;
+    width: 100%;
+    font-weight: bolder;
+    padding: 2rem;
+    font-size: 3rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+    gap: .5rem;
+    padding: 1rem;
+    margin: 2rem;
+}
+
+form > button {
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: #9fbadd;
+    font-size: 1.2rem;
+    color: black;
+    border-style: none;
+    border-radius: 8px;
+    font-weight: 500;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.chapters,
+.status {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .5rem;
+}
+
+.chapters {
+    align-items: flex-start;
+}
+
+.status > select {
+    padding: .3rem;
+}
+
+input,
+label {
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+}
+
+input {
+    border-color: azure;
+}
+
+label {
+    font-weight: bold;
+}
+
+form input {
+    font-size: 1rem;
+}
+
+table, td, th {
+    padding: 2rem;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+table {
+    background-color: #33415509;
+}
+
+table .remove {
+    padding: .7rem;
+    background-color: rgba(128, 24, 24, 0.674);
+    color: white;
+    border-style: none; 
+}
+
+table .status {
+    padding: .7rem;
+    background-color: #6494d2;
+    border-style: none;
+}
+
+input {
+    border-radius: 8px;
+    height: 30px;
+    width: 20vw;
+    padding: 8px;
+    font-size: 1.5rem;
+}
+
+#chapters {
+    width: 3.5vw;
+}
+
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+button:hover {
+    cursor: pointer;
+    border: none;
+    background: #0c428dac;
+    color: white;
+    padding: .7rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    transition: all .7s ease; 
+}
+
+.remove:hover {
+    background:rgba(156, 9, 9, 0.808) ;
+}
+
+form button:hover {
+    padding: 1.5rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.footer {
+    position: fixed;
+    margin-top: 2rem;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+    font-size: 15px;
+}
